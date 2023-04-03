@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>けむたい</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <h2 class="logo"><a href="#">居酒屋けむたい</a></h2>
+            <ul>
+                <li><a href="#">ホーム</a></li>
+                <li><a href="#">食べ物</a>
+                    <ul class="food">
+                        <li><a href="">おつまみ</a></li>
+                        <li><a href="">やきとり</a></li>
+                        <li><a href="">ごはんもの</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">飲み物</a>
+                    <ul class="drink">
+                        <li><a href="">ビール</a></li>
+                        <li><a href="">カクテル</a></li>
+                        <li><a href="">ノンアルコール</a></li>
+                    </ul>
+                </li>
+                <li><a href="#map">アクセス</a></li>
+                <li><a href="#reserve">予約</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="map">
+        <a href="https://goo.gl/maps/MiDbq6rmdwa8Y2hi6">〒133-0041 東京都江戸川区上一色２丁目１８−４</a><br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.1761553527618!2d139.87515719885326!3d35.726314524493866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018860b34736b49%3A0x6630189c463202c9!2z44CSMTMzLTAwNDEg5p2x5Lqs6YO95rGf5oi45bed5Yy65LiK5LiA6Imy77yS5LiB55uu77yR77yY4oiS77yUIOaxn-aIuOW3neS4iuS4gOiJsumDteS-v-WxgA!5e0!3m2!1sja!2sjp!4v1654847035794!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <form id="reserve">
+    <h2>ご予約</h2>
+        <table border="1">
+        <tr><td>お名前(代表者)</td>
+        <td><input type="text" name="onamae"></td></td></tr>
+        <tr>
+            <td>電話番号</td>
+            <td><input type="tel" name="tel"></td>
+        </tr>
+        <tr>
+            <td>性別</td>
+            <td>
+                <input type="radio" name="gender">男
+                <input type="radio" name="gender">女
+                <input type="radio" name="gender">その他
+            </td>
+        </tr>
+        <tr>
+            <td>日時</td>
+            <td>
+                <input type="date" name="date">
+                <input type="time" name="time">
+            </td>
+        </tr>
+        <tr>
+            <td>人数</td>
+            <td>
+                <select>
+                    <option>1名</option>
+                    <option>2名</option>
+                    <option>3名</option>
+                    <option>4名</option>
+                    <option>5名以上</option>
+                </select>
+            </td>
+        </tr>
+        <tr><td colspan="2">
+            備考欄<BR>
+            <textarea name="" id="" cols="40" rows="5"></textarea>
+        <tr><td colspan="2">
+            <input type="submit" value="送信">
+            <input type="reset" value="リセット"></td>
+        </tr>
+        </table>
+    </form>
+</body>
+</html>
